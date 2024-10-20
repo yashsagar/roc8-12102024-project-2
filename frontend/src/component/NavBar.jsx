@@ -38,16 +38,16 @@ const NavBar = () => {
           } top-10 -right-2 w-fit bg-slate-400 px-2 py-4 mt-2 rounded-md space-y-2 z-10`}
         >
           <div
-            onClick={handelLogout}
-            className="py-2 bg-slate-300 rounded-md px-2 cursor-pointer hover:bg-slate-200 active: active:bg-slate-200/50 select-none"
-          >
-            Logout
-          </div>
-          <div
             onClick={handelDatabaseUpdation}
             className="py-2 bg-slate-300 rounded-md px-2 cursor-pointer hover:bg-slate-200 whitespace-nowrap active: active:bg-slate-200/50 select-none"
           >
             Update Database
+          </div>
+          <div
+            onClick={handelLogout}
+            className="py-2 bg-slate-300 rounded-md px-2 cursor-pointer hover:bg-slate-200 active: active:bg-slate-200/50 select-none"
+          >
+            Logout
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import session from "express-session";
 import path from "path";
 import MongoStore from "connect-mongo";
+import mongoose from "mongoose";
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(
   session({
     store: MongoStore.create({
       mongoUrl: ENV_VARS.MONGO_URI,
+      ttl: 24 * 60 * 60,
     }),
     secret: "aswdrfgttE4Ba0cfD@",
     resave: false,
